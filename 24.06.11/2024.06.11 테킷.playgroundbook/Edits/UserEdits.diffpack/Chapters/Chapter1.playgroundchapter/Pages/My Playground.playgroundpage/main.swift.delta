@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+let name1: String = "이소영"
+let name2: String = "김승철"
+let name3: String = "박준영"
+let name4: String = "김수민"
+let name5: String = "김효정"
+
+print("\(name1)")
+print("\(name2)")
+print("\(name2)")
+print("\(name4)")
+print("\(name5)")
+
+// 위 코드처럼 같은 타입의 데이터를
+// 계속 나열하는 것은 문제가 있다 (실수 유발, 짜증)
+// 그래서 나온 것이 컬랙션(배열, 딕셔너리, 세트)!
+
+let names: [String] = [
+    "이소영", // 0번째
+    "김승철", // 1번째
+    "박준영", 
+    "김수민", 
+    "김효정", 
+    "김준환", 
+    "최승호"]
+
+print("\(names.first ?? "이름없음")")
+print("\(names[3] ?? "이름없음")")
+print("\(names.last ?? "이름없음")")
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 547}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
