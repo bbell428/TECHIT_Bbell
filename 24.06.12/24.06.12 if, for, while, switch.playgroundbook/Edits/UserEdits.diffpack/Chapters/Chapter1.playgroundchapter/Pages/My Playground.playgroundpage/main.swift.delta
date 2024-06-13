@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+// if
+let name: String = "Tuna"
+
+print("\(name)")
+
+print("----------------")
+
+// name의 값이 "Steve"등등일 때 알맞은 환영인사 보여주기
+if name == "Steve" {
+    print("Hello Steve")
+} else if name == "Tim" {
+    print("Hi Tim")
+} else {
+    print("Welcome")
+}
+
+print("----------------")
+
+// switch
+switch name {
+case "Steve", "Tim":
+    print("Hello CEO")
+case "Ned", "Tuna":
+    print("Hi tutor")
+default:
+    print("Welcome")
+}
+
+print("----------------")
+
+// for-in
+let names: [String] = ["Ned", "Steve", "Tim", "Tuna"]
+
+for _ in names {
+    print("Hello")
+}
+
+print("----------------")
+
+for name in names {
+    print("Hello \(name)")
+}
+
+print("----------------")
+
+// 반복문과 조건문이 섞여서 쓰이는 경우가 많다
+for name in names {
+    switch name {
+    case "Steve", "Tim":
+        print("Hello CEO")
+    case "Ned", "Tuna":
+        print("Hi tutor")
+    default:
+        print("Welcome")
+    }
+}
+
+// while
+
+print("----------------")
+
+var sum: Int = 0 // 합산 결과를 담을 변수
+var max: Int = 10 // 우리가 조건으로 활용할 최대 값
+var index: Int = 0 // 반복을 통해 비교할 대상 값
+
+while index &lt; max {
+    index = index + 1 // index += 1 이라고 적어도 됨
+    sum = sum + index // 계속 합산 결과에 index를 더함
+    print("index: \(index), sum: \(sum)")
+}
+
+// repeat-while
+print("----------------")
+// while이나 repeat-while에서 값들을 재활용할 때는
+// 다시 처음 초기화된 값으로 만들어줄 필요가 있다
+// index = 0
+
+repeat {
+    index = index + 1 // index += 1 이라고 적어도 됨
+    sum = sum + index // 계속 합산 결과에 index를 더함
+    print("index: \(index), sum: \(sum)")
+} while index &lt; max
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1471}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

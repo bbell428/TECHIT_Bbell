@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+//코드1: 우리 조원의 이름/닉네임을 배열로 만들어 한명씩 환영 메시지를 출력해봅시다
+let names: [String] = ["김종혁", "김준환", "김효정", "이소영", "홍재민"]
+
+for i in 0 ..&lt; names.count {
+    print(names[i] + "님 격하게 환영합니다.")
+}
+
+print("------------------------------")
+
+//코드2: 코드1을 기반으로 조원들의 이름을 출력할 때의 순서에서 3번째 이전과 그 후의 환영 메시지가 다르게 만들어봅시다
+for i in 0 ..&lt; names.count {    
+    if i &gt; 2 {
+        print(names[i] + "님 진심으로 환영합니다.")
+    } else {
+        print(names[i] + "님 격하게 환영합니다.")
+    }
+}
+
+print("------------------------------")
+
+//코드3: 코드1을 기반으로 조원들의 이름을 출력할 때 각 이름마다 다른 환영 인사가 나오게 만들어봅시다
+for i in 0 ..&lt; names.count {
+    switch names[i] {
+    case "김종혁":
+        print("김종혁님 멋지시네요.")
+    case "김준환":
+        print("김준환님 어서오세요.")
+    case "김효정":
+        print("김효정님 반갑습니다.")
+    case "이소영":
+        print("이소영님 하이요.")
+    case "홍재민":
+        print("홍재민님 안녕하세요.")
+    default:
+        break
+    }
+}
+
+print("------------------------------")
+
+// 코드4: 코드3를 기반으로 몇몇 사람들을 묶어 같은 환영 메시지가 나오게 만들어봅시다
+for i in 0 ..&lt; names.count {
+    switch names[i] {
+    case "김종혁", "김준환":
+        print(names[i] + "님 멋지시네요.")
+    case "김효정", "이소영", "홍재민":
+        print(names[i] + "님 반갑습니다.")
+    default:
+        break
+    }
+}
+
+print("------------------------------")
+
+//코드5: 1부터 100까지 숫자를 늘려가며, 각 단계별로 쌓인 합을 출력해봅시다
+var sum: Int = 0
+for i in 1 ... 100 {
+    sum += i
+}
+print("1~100까지의 총합: \(sum)")
+
+print("------------------------------")
+
+//코드6: 코드5를 기반으로 각 단계별 숫자가 5 단위 일때만 출력해봅시다 (5, 10, 15 …)
+for i in 1 ... 100 {
+    if i % 5 == 0 {
+        print(i)
+    }
+}
+
+print("------------------------------")
+
+//코드7: 앞서 나온 마지막 온도 switch 구문 처리 코드에서 섭씨 온도를 가져와도 switch 구문 전체는 수정없이 작동되도록 만들어봅시다. 화씨로 출력되는 상태 그대로 유지 포함
+
+// 섭씨 -&gt; 화씨 변환 공식: ( (섭씨온도)°C × 9/5 ) + 32 = 32°F
+
+let temperature = 0
+
+var celsius: Int = (temperature * (9/5)) + 32
+
+switch (celsius) {
+case 0...49:
+    print("Cold")
+    print("섭씨온도: \(temperature), 화씨온도: \(celsius)")
+case 50...79:
+    print("Warm")
+    print("섭씨온도: \(temperature), 화씨온도: \(celsius)")
+case 80...110:
+    print("Hot")
+    print("섭씨온도: \(temperature), 화씨온도: \(celsius)")
+default:
+    break
+    
+}
+
+print("------------------------------")
+
+//코드8: 구구단의 모든 내용을 출력해봅시다. 단, 2,4,6…와 같이 짝수 단일때만 출력하게 만듭시다.
+
+for num in 1 ... 9 {
+    if num % 2 == 0 {
+        for i in 1 ... 9 {
+            print("\(num)*\(i)=\(num * i)")
+        }
+    }
+}
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2313}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
