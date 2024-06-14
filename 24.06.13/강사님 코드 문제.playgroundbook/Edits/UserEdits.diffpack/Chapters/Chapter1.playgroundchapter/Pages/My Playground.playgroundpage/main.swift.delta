@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+// 코드1 우리 조원의 이름/닉네임을 배열로 만들어 한명씩 환영 메시지를 출력해봅시다
+
+let members: [String] = ["김승철", "배문성", "김종혁", "방민지"]
+
+// 이 방법을 권장
+for member in members {
+    print("안녕하세요, \(member)님")
+}
+
+print("-----------------------")
+
+// 이 방법도 동작에는 문제 없음
+for index in 0..&lt;members.count {
+    let member: String = members[index]
+    print("안녕하세요, \(member)님")
+}
+
+print("-----------------------")
+
+// 코드2 코드1을 기반으로 조원들의 이름을 출력할 때의 순서에서 3번째 이전과 그 후의 환영 메시지가 다르게 만들어봅시다
+
+var indexMember: Int = 1
+
+for member in members {
+    
+    if indexMember &lt; 4 {
+        print("안녕하세요, \(indexMember)번째 멤버인 \(member)님")
+    } else {
+        print("반갑습니다, \(indexMember)번째 멤버인 \(member)님")
+    }
+    
+    indexMember += 1
+}
+
+print("-----------------------")
+
+// 코드3 코드1을 기반으로 조원들의 이름을 출력할 때 각 이름마다 다른 환영 인사가 나오게 만들어봅시다
+
+// if문으로 처리할 수도 있지만...
+for member in members {
+    if member == "김승철" {
+        print("안녕하세요, \(member)님")
+    } else if member == "배문성" {
+        print("반갑습니다, \(member)님")
+    } else if member == "김종혁" {
+        print("어서오세요, \(member)님")
+    } else if member == "방민지" {
+        print("환영합니다, \(member)님")
+    }  
+}
+
+print("-----------------------")
+
+// switch로 작성하는 것이 더 권장되는 경우의 문제
+for member in members {
+    switch member {
+    case "김승철":
+        print("안녕하세요, \(member)님")
+    case "배문성":
+        print("반갑습니다, \(member)님")
+    case "김종혁":
+        print("어서오세요, \(member)님")
+    case "방민지":
+        print("환영합니다, \(member)님")
+    default:
+        print("누구신지는 모르겠지만 안녕하세요")
+    }
+}
+
+print("-----------------------")
+
+// 코드4 코드3를 기반으로 몇몇 사람들을 묶어 같은 환영 메시지가 나오게 만들어봅시다 
+
+for member in members {
+    switch member {
+    case "김승철", "김종혁" :
+        print("안녕하세요, \(member)님")
+    case "배문성", "방민지":
+        print("반갑습니다, \(member)님")
+    default:
+        print("누구신지는 모르겠지만 안녕하세요")
+    }
+}
+
+print("-----------------------")
+
+// 코드5 1부터 100까지 숫자를 늘려가며, 각 단계별로 쌓인 합을 출력해봅시다
+
+var count: Int = 0
+var total: Int = 0
+
+repeat {
+    count += 1
+    total += count
+    print("count: \(count), total: \(total)")
+} while count &lt; 100
+
+print("-----------------------")
+
+// 코드6 코드5를 기반으로 각 단계별 숫자가 5 단위 일때만 출력해봅시다 (5, 10, 15 …)
+
+count = 0
+total = 0
+
+repeat {
+    count += 1
+    total += count
+    
+    let isX5: Bool = (count % 5 == 0)
+    
+    if isX5 {
+        print("count: \(count), total: \(total)")
+    }
+} while count &lt; 100
+
+print("-----------------------")
+
+// 코드7 앞서 나온 마지막 온도 switch 구문 처리 코드에서 섭씨 온도를 가져와도 switch 구문 전체는 수정없이 작동되도록 만들어봅시다. 화씨로 출력되는 상태 그대로 유지 포함
+
+let temperatureC: Int = 30
+let temperatureF: Int = (temperatureC * 9 / 5) + 32 
+
+switch (temperatureF) {
+case 0...49: 
+    print("Cold")
+
+case 50...79: 
+    print("Warm")
+
+case 80...110: 
+    print("Hot")
+
+default: 
+    print("Temperature out of range")
+}
+
+print("-----------------------")
+
+// 코드8 구구단의 모든 내용을 출력해봅시다. 단, 2,4,6…와 같이 짝수 단일때만 출력하게 만듭시다.
+
+for indexDan in 2...9 {
+    
+    if indexDan % 2 == 0 {
+        print("\(indexDan)단")
+        
+        for index in 1...9 {
+            let result: Int = indexDan * index
+            print("\(indexDan) ✕ \(index) = \(result)")
+        }
+    }
+}
+
+print("-----------------------")
+
+// 위 코드를 이렇게 만들 수도 있다
+
+var indexDan: Int = 0
+
+repeat {
+    indexDan += 2
+    print("\(indexDan)단")
+    
+    for index in 1...9 {
+        let result: Int = indexDan * index
+        print("\(indexDan) ✕ \(index) = \(result)")
+    }
+} while indexDan &lt; 8
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 3338}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
