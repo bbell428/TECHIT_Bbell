@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+print("Hello World")
+
+// 숫자 타입 
+
+var age: Int = 13
+age = 14
+age = 21
+
+var otherAge: UInt = 24
+age = Int(otherAge) // UInt 값을 Int로 변환 사용
+
+print("age: \(age)")
+
+print("Int.max: \(Int.max)")
+print("Int.min: \(Int.min)")
+
+let x: Double = 3.543
+let y: Float = 1.21
+
+let sum: Double = x + Double(y)
+print("x + y = \(sum)")
+
+
+// 불리언 타입
+
+let isCorrect: Bool = true
+
+if isCorrect {
+  print("YES!")
+}
+
+
+// 문자 타입
+let myFlag: Character = "🇰🇷"
+print("\(myFlag)")
+
+// 문자열 타입
+let myCountry: String = "대한민국"
+print(myCountry)
+
+let cheerup: String = "만세"
+print("\(myFlag) \(myCountry) \(cheerup)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 601}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
