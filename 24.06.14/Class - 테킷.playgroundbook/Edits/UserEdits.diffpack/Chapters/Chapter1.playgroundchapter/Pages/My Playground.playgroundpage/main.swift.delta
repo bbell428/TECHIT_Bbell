@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+// 우리만의 계산기를 위한 새로운 타입을 만듭시다
+class Calc {
+    // 숫자 데이터 두 개를 포함시키는 계산기를 만들어 봅시다
+    var number1: Int = 0
+    var number2: Int = 0
+    
+    // 위 숫자 데이터 두 개를 덧셈한 결과를 외부에 다시 보내준다
+    func add() -&gt; Int {
+        let result: Int = number1 + number2
+        // print("add: \(result)")
+        return result
+    }
+}
+
+// 직접 만든 타입으로 데이터를 만들려면 이렇게 합니다
+var myCalc: Calc = Calc()
+
+// 계산기 데이터 안의 숫자 데이터를 바꾸어 출력해봅시다
+myCalc.number1 = 15
+myCalc.number2 = 5
+print("number1: \(myCalc.number1)")
+print("number2: \(myCalc.number2)")
+
+// 계산을 시켜봅시다
+let addedNumber:Int = myCalc.add()
+print("add: \(addedNumber)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 610}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
