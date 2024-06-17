@@ -22,7 +22,7 @@ struct ContentView: View {
                                             Text("\(student.name)")
                                                 .font(.title)
                                                 .foregroundColor(.blue)
-//                                                .padding(.bottom, 10)
+                                                .padding(.bottom, 10)
                                             Text("MBTI: \(student.mbti)")
                                             Text("별자리: \(student.star)")
                                             Text("장기: \(student.talent)")
