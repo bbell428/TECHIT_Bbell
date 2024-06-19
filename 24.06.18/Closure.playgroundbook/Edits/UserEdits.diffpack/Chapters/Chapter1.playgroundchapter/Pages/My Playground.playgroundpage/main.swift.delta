@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation 
+
+// 간단한 함수를 만듭시다
+func sayHello() {
+    print("Hello")
+}
+
+func sayHelloTo(_ name: String) {
+    print("Hello, \(name)")
+}
+
+func buildMessage(_ name: String) -&gt; String {
+    let message: String = "Hello, \(name)"
+    return message
+}
+
+// 위 함수를 실행해봅시다
+sayHello()
+sayHelloTo("Ned")
+
+let helloMessage: String = buildMessage("Tuna")
+print("message: \(helloMessage)")
+
+// func를 통한 함수 말고
+// 클로저를 활용해서 똑같은 호출될 존재들을
+// 만들어봅시다
+
+let sayHi = {
+    print("Hi")
+}
+
+let sayHiTo = { (name: String) in
+    print("Hi, \(name)")
+}
+
+let buildGreeting = { (name: String) -&gt; String in
+    let message: String = "Hello, \(name)"
+    return message
+}
+
+sayHi()
+sayHiTo("Ned")
+
+let hiGreeting: String = buildGreeting("Tuna")
+print("message: \(hiGreeting)")
+
+// 클로저 표현식을 계산하는 일에 써봅시다
+
+func add(_ number1: Int, _ number2: Int) -&gt; Int {
+    let result: Int = number1 + number2
+    return result
+}
+
+let sub: (Int, Int) -&gt; Int
+sub = { (number1: Int, number2: Int) -&gt; Int in
+    let result: Int = number1 - number2
+    return result
+}
+
+// 매개변수로 클로저를 받도록 해보자
+// 받을 클로저의 타입은 ... (Int, Int) -&gt; Int
+func showCalc(title: String, work: (Int, Int) -&gt; Int) {
+    print("\(title) 작업중")
+    print("결과: \(work(2, 3))")
+}
+
+// 바로 위 함수는 이렇게 호출할 수 있다
+showCalc(title: "덧셈", work: add)
+showCalc(title: "뺄셈", work: sub)
+
+// 직접 호출하면서 클로저 표현식으로 넘길 수도 있다
+showCalc(title: "곱셈", work: { (number1: Int, number2: Int) -&gt; Int in
+    let result: Int = number1 * number2
+    return result
+})
+
+// 위 코드를 단축해봅시다
+showCalc(title: "곱셈", work: { (number1, number2) -&gt; Int in
+    return number1 * number2
+})
+
+// 호출되는 함수의 마지막 매개변수가 클로저 표현식이라면
+// 후행 클로저라는 개념으로 다음과 같이 코드를 더 깔끔하게 처리할 수도 있다
+showCalc(title: "곱셈") { (number1, number2) -&gt; Int in
+    return number1 * number2
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1721}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

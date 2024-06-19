@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>protocol Named {
+    var name: String { get set }
+    func displayName()
+}
+
+
+// 참조 타입
+class Player: Named {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func displayName() {
+        print("\(name) 선수")
+    }
+}
+
+// 참조타입 해석
+// : 최홍만이라는 이름값이 있는 Player 타입의 
+// 데이터(인스턴스, instance)가 있다
+// 이 데이터 위치를 playerOne이라는 이름이 참조하게 만든다
+let playerOne: Player = Player(name: "최홍만")
+
+// playerOne이 참조하는 데이터의 메모리 위치를
+// playerTwo도 참조하도록 만든다
+// (둘은 메모리 위치 공유 관계)
+let playerTwo: Player = playerOne
+
+playerOne.name = "손연재"
+
+print("playerOne:")
+playerOne.displayName() // 손연재 선수
+print("playerTwo:")
+playerTwo.displayName() // 손연재 선수
+
+print("-------------------")
+
+// 값 타입
+struct Friend: Named {
+    var name: String
+    
+    func displayName() {
+        print("\(name) 친구")
+    }
+}
+
+// 값타입 해석
+// : 뽀로로라는 이름값이 있는 Friend 타입의 
+// 데이터(인스턴스, instance)가 있다
+// 이 데이터 값을 friendOne이라는 변수에 복사해서 저장한다(할당)
+var friendOne: Friend = Friend(name: "뽀로로")
+
+// friendOne 데이터 내용을 '복사'해서
+// friendTwo라는 새로운 변수에 저장한다(할당) 
+var friendTwo: Friend = friendOne 
+
+friendOne.name = "피카츄"
+friendTwo.name = "영심이"
+
+print("friendOne:") 
+friendOne.displayName() // 피카츄 친구
+print("friendTwo:")
+friendTwo.displayName() // 영심이 친구
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1214}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
