@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let numbers: [Int] = [121, 454, 21, 324, 213, 453, 462, 123]
+
+// 전통적인 다른 언어의 반복문 비슷하게
+for indexOut in 0..&lt;numbers.count {
+    for indexIn in 0..&lt;numbers.count {
+        if numbers[indexOut] == numbers[indexIn] {
+            print("찾았다! \(numbers[indexIn])")
+        }
+    }
+}
+
+// Swift 언어의 반복문 스럽게
+for numberOut in numbers {
+    for numberIn in numbers {
+        if numberOut == numberIn {
+            print("찾았다 요놈! \(numberIn)")
+        }
+    }
+}
+
+for (indexOut, numberOut) in numbers.enumerated() {
+    for (indexIn, numberIn) in numbers.enumerated() {
+//        if indexOut &lt;= indexIn {
+            if numberOut == numberIn {
+                print("찾았다 요놈! \(indexOut)번째 \(numberIn)")
+            }
+//        }
+    }
+}
+
+
+
+for _ in 0..&lt;100 {
+    for _ in 0..&lt;3 {
+        print("앞으로 걸어가자")
+    }
+    
+    print("절을 합니다")
+}
+
+////
+
+var indexDo: Int = 0
+
+while indexDo &lt; 100 {
+    indexDo += 1
+    print("삼보일배 \(indexDo)번째")
+    
+    var indexWalk: Int = 0
+    
+    while indexWalk &lt; 3 {
+        indexWalk += 1
+        print("앞으로 걸어가자 \(indexWalk)번째")
+    }
+    
+    print("절을 합니다")
+}
+
+////
+
+var index = 10
+
+while index &lt; 5 {
+    index += 1
+    print("그냥 while문 \(index)번째")
+}
+
+// ??
+
+index = 10
+
+repeat {
+    index += 1
+    print("repeat-while문 \(index)번째")
+} while index &lt; 5
+
+// repeat-while문 11번째
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1299}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

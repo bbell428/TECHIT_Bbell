@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// 안좋은 코드 예시 1
+func sayHello1(name: String, age: Int) {
+    // 나이가 미성년자일때만 반갑게 맞아줍시다
+    // 이름 길이가 두글자일때만 반겨줍시다
+    
+    if age &lt; 19 {
+        if name.count &lt; 3 {
+            print("\(age)살 \(name)님, 반갑습니다!")
+        }
+    }
+}
+
+// 안좋은 코드 예시 2
+func sayHello2(name: String, age: Int) {
+    // 나이가 미성년자일때만 반갑게 맞아줍시다
+    // 이름 길이가 두글자일때만 반겨줍시다
+    
+    if age &lt; 19 &amp;&amp; name.count &lt; 3 {
+        print("\(age)살 \(name)님, 반갑습니다!")
+    }
+}
+
+// if문들로 조건 판단해보기
+func sayHello3(name: String, age: Int) {
+    // 나이가 미성년자일때만 반갑게 맞아줍시다
+    if age &lt; 19 {
+        // OK!
+    } else {
+        // 미성년자가 아니라고 판단
+        return
+    }
+    
+    // 이름 길이가 두글자일때만 반겨줍시다
+    if name.count &lt; 3 {
+        // OK!
+    } else {
+        // 이름이 두글자 이상이라고 판단
+        return
+    }
+    
+    print("\(age)살 \(name)님, 반갑습니다!")
+}
+
+// if문들을 뒤집어서 조건 판단해보기
+func sayHello4(name: String, age: Int) {
+    // 나이가 미성년자일때만 반갑게 맞아줍시다
+    if age &gt;= 19 {
+        // 미성년자가 아니라고 판단
+        return
+    }
+    
+    // 이름 길이가 두글자일때만 반겨줍시다
+    if name.count &gt;= 3 {
+        // 이름이 두글자 이상이라고 판단
+        return
+    }
+    
+    print("\(age)살 \(name)님, 반갑습니다!")
+}
+
+// 좋은 방법! : guard
+func sayHello(name: String, age: Int) {
+    // 나이가 미성년자일때만 반갑게 맞아줍시다
+    guard age &lt; 19 else {
+        // 미성년자가 아니라고 판단
+        return
+    }
+    
+    // 이름 길이가 두글자일때만 반겨줍시다
+    guard name.count &lt; 3 else {
+        // 이름이 두글자 이상이라고 판단
+        return
+    }
+    
+    print("\(age)살 \(name)님, 반갑습니다!")
+}
+
+sayHello(name: "홍길동", age: 13)
+sayHello(name: "고길동", age: 47)
+sayHello(name: "지우", age: 15)
+sayHello(name: "이슬", age: 16)
+
+
+
+
+
+
+func sayHello(name: String?) {
+    if let name {
+        print("Hello \(name)")
+    }
+}
+
+func sayHi(name: String?) {
+    guard let name else {
+        return
+    }
+    
+    // name은 이미 nil이 아닌 것으로 판단되어
+    // 추가의 unwrapping이 필요하지 않다!
+    print("Hi, \(name)")
+}
+
+sayHello(name: "Tuna")
+sayHello(name: nil)
+
+sayHi(name: "Ned")
+sayHi(name: nil)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1889}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

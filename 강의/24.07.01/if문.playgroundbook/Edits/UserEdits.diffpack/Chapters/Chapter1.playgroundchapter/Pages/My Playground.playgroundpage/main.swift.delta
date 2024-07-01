@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//// K&amp;R 스타일
+//if index &lt; 20 {
+//    print("index &lt; 20")
+//}
+//
+//// BSD 스타일
+//if index &lt; 20
+//{
+//    print("index &lt; 20")
+//}
+//
+//// 소괄호 : ( )
+//// 중괄호 : { }
+//// 대괄호 : [ ]
+//
+//
+//var x: Int = 9
+//
+//if x &gt; 9 {
+//    print("x는 9보다 큽니다.")
+//} else if x &lt; 9 {
+//    print("x는 9보다 작습니다.")
+//} else {
+//    print("x는 9입니다.")
+//}
+//
+//// 위와 같은 원치않는 결과가 없도록
+//// 꼼꼼하게 체크해주는 기술을 테스팅이라 부르고
+//// 우리는 앱스쿨에서 다음의 테스팅 기술을 배울 거에요.
+//// XCTest
+//// Swift Testing
+//
+//// 위 코드는 다음과 같이 작성해도 된다.
+//// 하지만 좋은 코드는 아니다.
+//if x &gt; 9 {
+//    print("x는 9보다 큽니다.")
+//} else {
+//    if x &lt; 9 {
+//        print("x는 9보다 작습니다.")
+//    } else {
+//        print("x는 9입니다.")
+//    }
+//}
+//
+//var x: Int = 9
+//
+//// 이렇게 작성하기 보다는
+//
+//if x == 10 {
+//    print("x는 10입니다.")
+//}
+//
+//if x == 9 {
+//    print("x는 9입니다.")
+//}
+//
+//if x == 8 {
+//    print("x는 8입니다.")
+//}
+//
+//// 아래와 같이 if-else-if로 작성하는 게
+//// 더 효율적으로 작동한다
+//
+//if x == 10 {
+//    print("x는 10입니다.")
+//} else if x == 9 {
+//    print("x는 9입니다.")
+//} else if x == 8 {
+//    print("x는 8입니다.")
+//}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1024}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
