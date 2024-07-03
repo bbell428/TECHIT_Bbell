@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LottoKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당첨로또" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-Td-BHR">
+                                <rect key="frame" x="0.0" y="159" width="393" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로또1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-ER-7Uc">
+                                <rect key="frame" x="0.0" y="215.33333333333334" width="393" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로또2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-iE-JB5">
+                                <rect key="frame" x="0.0" y="271.66666666666669" width="393" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로또3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYu-Ae-fEK">
+                                <rect key="frame" x="0.0" y="328" width="393" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로또4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLI-4E-9DG">
+                                <rect key="frame" x="0.0" y="384.33333333333331" width="393" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로또5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNX-tu-HUU">
+                                <rect key="frame" x="0.0" y="440.66666666666669" width="393" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-mX-cbR">
+                                <rect key="frame" x="93" y="585" width="207" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="로또 5매 구매">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="purchaseLottoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQQ-3x-3ws"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UYu-Ae-fEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0tS-Lz-IMd"/>
+                            <constraint firstItem="mNX-tu-HUU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3dd-rh-Ifo"/>
+                            <constraint firstItem="UYu-Ae-fEK" firstAttribute="top" secondItem="Bdf-iE-JB5" secondAttribute="bottom" constant="30" id="4IJ-zp-iQF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVk-Td-BHR" secondAttribute="trailing" id="EKY-4l-eWK"/>
+                            <constraint firstItem="FXC-ER-7Uc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GZ8-JJ-rR7"/>
+                            <constraint firstItem="LVk-Td-BHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H1U-PP-EM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bdf-iE-JB5" secondAttribute="trailing" id="NfM-N8-odF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLI-4E-9DG" secondAttribute="trailing" id="QVi-Fe-gSN"/>
+                            <constraint firstItem="Bdf-iE-JB5" firstAttribute="top" secondItem="FXC-ER-7Uc" secondAttribute="bottom" constant="30" id="Ssf-h4-Ish"/>
+                            <constraint firstItem="PLI-4E-9DG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WQ7-G6-igK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FXC-ER-7Uc" secondAttribute="trailing" id="bTy-jE-sRK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNX-tu-HUU" secondAttribute="trailing" id="cZ1-7U-JaJ"/>
+                            <constraint firstItem="mNX-tu-HUU" firstAttribute="top" secondItem="PLI-4E-9DG" secondAttribute="bottom" constant="30" id="hBl-j0-YkC"/>
+                            <constraint firstItem="LVk-Td-BHR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="jap-l0-dVp"/>
+                            <constraint firstItem="FXC-ER-7Uc" firstAttribute="top" secondItem="LVk-Td-BHR" secondAttribute="bottom" constant="30" id="jhA-Mm-oj4"/>
+                            <constraint firstItem="Bdf-iE-JB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n2U-45-e00"/>
+                            <constraint firstItem="PLI-4E-9DG" firstAttribute="top" secondItem="UYu-Ae-fEK" secondAttribute="bottom" constant="30" id="tF8-N4-zcl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UYu-Ae-fEK" secondAttribute="trailing" id="zMK-Xy-BtC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lottoLabel" destination="LVk-Td-BHR" id="G04-o3-Chy"/>
+                        <outlet property="mylotto1" destination="FXC-ER-7Uc" id="bCn-2P-KVv"/>
+                        <outlet property="mylotto2" destination="Bdf-iE-JB5" id="1qP-B3-bL1"/>
+                        <outlet property="mylotto3" destination="UYu-Ae-fEK" id="LrX-DM-pGo"/>
+                        <outlet property="mylotto4" destination="PLI-4E-9DG" id="ia1-xR-DL1"/>
+                        <outlet property="mylotto5" destination="mNX-tu-HUU" id="erp-56-bJ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
