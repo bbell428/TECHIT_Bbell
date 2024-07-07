@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import SwiftUI
+
+/* 두 애니메이션 자료구조 만들기
+ 
+ [뽀롱뽀롱 뽀로로]
+ 주인공들: 뽀로로, 크롱, 포비, 루피, 애디
+ 특징 요소: 성별, 동물
+ 
+ [꼬마버스 타요]
+ 주인공들: 타요, 가니, 라니, 로기
+ 특징 요소: 버스 종류(광역, 간선, 지선, 순환)
+ 
+ 두 애니메이션의 공통된 주인공들의 요소(프로퍼티)를 뽑아봅시다
+ - 이름
+ - 색상
+ */
+
+// 클래스로 공통된 것들을 얘기
+class AnimationCharacter {
+    var name: String
+    var color: Color
+    
+    // 초기화
+    init(name: String, color: Color) {
+        self.name = name
+        self.color = color
+    }
+}
+
+// Bool 타입으로 하여 남녀 둘만 나눌 수도 있지만 논바이너리 등 고려하여 enum으로
+enum Gender: String {
+    case female = "여성"
+    case male = "남성"
+    case other = "기타"
+}
+
+class PororoCharacter: AnimationCharacter {
+    
+    var gender: Gender
+    
+    init(name: String, color: Color, gender: Gender) {
+        self.gender = gender
+        
+        // super 지시자는 슈퍼클래스의 메서드를 접근할 수 있게 함
+        super.init(name: name, color: color)
+    }
+}
+
+let pororoChatacters: [PororoCharacter] = [
+    PororoCharacter(name: "뽀로로", color: .blue, gender: .male),
+    PororoCharacter(name: "크롱", color: .green, gender: .male),
+    PororoCharacter(name: "에디", color: .yellow, gender: .male),
+    PororoCharacter(name: "로디", color: .yellow, gender: .other),
+    PororoCharacter(name: "루피", color: .pink, gender: .female),
+    PororoCharacter(name: "패티", color: .purple, gender: .female),
+    PororoCharacter(name: "포비", color: .white, gender: .male),
+    PororoCharacter(name: "해리", color: .pink, gender: .female),
+]
+
+enum BusKind: String {
+    case rapid = "광역(red)"
+    case trunk = "간선(blue)"
+    case branch = "지선(green)"
+    case circulation = "순환(yellow)"
+}
+
+class TayoCharacter: AnimationCharacter {
+    var busKind: BusKind
+    var number: Int
+    
+    init(name: String, color: Color, busKind: BusKind, number: Int) {
+        self.busKind = busKind
+        self.number = number
+        
+        super.init(name: name, color: color)
+    }
+}
+
+let tayoCharacters: [TayoCharacter] = [
+    TayoCharacter(name: "타요", color: .blue, busKind: .trunk, number: 120),
+    TayoCharacter(name: "로기", color: .green, busKind: .branch, number: 1000),
+    TayoCharacter(name: "라니", color: .yellow, busKind: .circulation, number: 02),
+    TayoCharacter(name: "가니", color: .red, busKind: .rapid, number: 1339),
+]
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2171}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
