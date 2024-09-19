@@ -1,0 +1,155 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "|" : {
+
+    },
+    "Counter" : {
+      "comment" : "for TabItem",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Counter"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카운터"
+          }
+        }
+      }
+    },
+    "Down" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "숫자 내리기"
+          }
+        }
+      }
+    },
+    "Help" : {
+      "comment" : "for TabItem",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Help"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도움말"
+          }
+        }
+      }
+    },
+    "History" : {
+      "comment" : "for TabItem",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기록"
+          }
+        }
+      }
+    },
+    "into history tab" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기록 탭에서 보실 수 있습니다"
+          }
+        }
+      }
+    },
+    "Reset" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초기화"
+          }
+        }
+      }
+    },
+    "Save current data" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현재 데이터 저장하기"
+          }
+        }
+      }
+    },
+    "Saving is completed" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "저장 완료"
+          }
+        }
+      }
+    },
+    "There is no history data." : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기록이 없습니다"
+          }
+        }
+      }
+    },
+    "Touch here for adding a count" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch here for adding a count"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "숫자를 올리려면 이 부분을 터치하세요"
+          }
+        }
+      }
+    },
+    "Will you reset?" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초기화 하시겠습니까?"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5402242C94016600F8B364 /* KioskMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5402232C94016600F8B364 /* KioskMenuView.swift */; };
+		2C54022D2C9418B300F8B364 /* DisplayFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C54022A2C9418B300F8B364 /* DisplayFilterButton.swift */; };
+		2C54022E2C9418B300F8B364 /* KioskCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C54022B2C9418B300F8B364 /* KioskCategoryButton.swift */; };
+		2CB43C6B2C93DAD100075123 /* KioskLab6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C6A2C93DAD100075123 /* KioskLab6App.swift */; };
+		2CB43C6F2C93DAD200075123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB43C6E2C93DAD200075123 /* Assets.xcassets */; };
+		2CB43C722C93DAD200075123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB43C712C93DAD200075123 /* Preview Assets.xcassets */; };
+		2CB43C7C2C93DAD200075123 /* KioskLab6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C7B2C93DAD200075123 /* KioskLab6Tests.swift */; };
+		2CB43C862C93DAD200075123 /* KioskLab6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C852C93DAD200075123 /* KioskLab6UITests.swift */; };
+		2CB43C882C93DAD200075123 /* KioskLab6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C872C93DAD200075123 /* KioskLab6UITestsLaunchTests.swift */; };
+		2CB43C952C93DB6800075123 /* KioskHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C942C93DB6800075123 /* KioskHomeView.swift */; };
+		2CB43C972C93F4D400075123 /* KioskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB43C962C93F4D400075123 /* KioskButton.swift */; };
+		EA2E07B82C93F2B200F38B9E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E07B72C93F2B200F38B9E /* Food.swift */; };
+		FBA85C6B2C9400AA00D5D69C /* CartStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C6A2C9400AA00D5D69C /* CartStore.swift */; };
+		FBA85C6E2C9400D300D5D69C /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C6D2C9400D300D5D69C /* CartView.swift */; };
+		FBA85C702C9400E900D5D69C /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C6F2C9400E900D5D69C /* CartItemCell.swift */; };
+		FBA85C722C9401D300D5D69C /* CategoryModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C712C9401D300D5D69C /* CategoryModifier.swift */; };
+		FBA85C742C940C7500D5D69C /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C732C940C7500D5D69C /* LabelButton.swift */; };
+		FBA85C762C940FF300D5D69C /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C752C940FF300D5D69C /* PaymentView.swift */; };
+		FBA85C782C9411DF00D5D69C /* PayButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85C772C9411DF00D5D69C /* PayButtonModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CB43C782C93DAD200075123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CB43C5F2C93DAD100075123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB43C662C93DAD100075123;
+			remoteInfo = KioskLab6;
+		};
+		2CB43C822C93DAD200075123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CB43C5F2C93DAD100075123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB43C662C93DAD100075123;
+			remoteInfo = KioskLab6;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C5402232C94016600F8B364 /* KioskMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskMenuView.swift; sourceTree = "<group>"; };
+		2C54022A2C9418B300F8B364 /* DisplayFilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayFilterButton.swift; sourceTree = "<group>"; };
+		2C54022B2C9418B300F8B364 /* KioskCategoryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KioskCategoryButton.swift; sourceTree = "<group>"; };
+		2CB43C672C93DAD100075123 /* KioskLab6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KioskLab6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB43C6A2C93DAD100075123 /* KioskLab6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskLab6App.swift; sourceTree = "<group>"; };
+		2CB43C6E2C93DAD200075123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CB43C712C93DAD200075123 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CB43C772C93DAD200075123 /* KioskLab6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskLab6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB43C7B2C93DAD200075123 /* KioskLab6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskLab6Tests.swift; sourceTree = "<group>"; };
+		2CB43C812C93DAD200075123 /* KioskLab6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskLab6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB43C852C93DAD200075123 /* KioskLab6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskLab6UITests.swift; sourceTree = "<group>"; };
+		2CB43C872C93DAD200075123 /* KioskLab6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskLab6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CB43C942C93DB6800075123 /* KioskHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskHomeView.swift; sourceTree = "<group>"; };
+		2CB43C962C93F4D400075123 /* KioskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskButton.swift; sourceTree = "<group>"; };
+		EA2E07B72C93F2B200F38B9E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		FBA85C6A2C9400AA00D5D69C /* CartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStore.swift; sourceTree = "<group>"; };
+		FBA85C6D2C9400D300D5D69C /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		FBA85C6F2C9400E900D5D69C /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		FBA85C712C9401D300D5D69C /* CategoryModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModifier.swift; sourceTree = "<group>"; };
+		FBA85C732C940C7500D5D69C /* LabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButton.swift; sourceTree = "<group>"; };
+		FBA85C752C940FF300D5D69C /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		FBA85C772C9411DF00D5D69C /* PayButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayButtonModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CB43C642C93DAD100075123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C742C93DAD200075123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C7E2C93DAD200075123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C54022C2C9418B300F8B364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C54022A2C9418B300F8B364 /* DisplayFilterButton.swift */,
+				2C54022B2C9418B300F8B364 /* KioskCategoryButton.swift */,
+			);
+			name = View;
+			path = ../../../../Downloads/View;
+			sourceTree = "<group>";
+		};
+		2CB43C5E2C93DAD100075123 = {
+			isa = PBXGroup;
+			children = (
+				2CB43C692C93DAD100075123 /* KioskLab6 */,
+				2CB43C7A2C93DAD200075123 /* KioskLab6Tests */,
+				2CB43C842C93DAD200075123 /* KioskLab6UITests */,
+				2CB43C682C93DAD100075123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CB43C682C93DAD100075123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CB43C672C93DAD100075123 /* KioskLab6.app */,
+				2CB43C772C93DAD200075123 /* KioskLab6Tests.xctest */,
+				2CB43C812C93DAD200075123 /* KioskLab6UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CB43C692C93DAD100075123 /* KioskLab6 */ = {
+			isa = PBXGroup;
+			children = (
+				2CB43C6A2C93DAD100075123 /* KioskLab6App.swift */,
+				2C54022C2C9418B300F8B364 /* View */,
+				FBA85C692C9400A000D5D69C /* Cart */,
+				EA2E07B42C93F28D00F38B9E /* Model */,
+				2CB43C942C93DB6800075123 /* KioskHomeView.swift */,
+				2C5402232C94016600F8B364 /* KioskMenuView.swift */,
+				2CB43C962C93F4D400075123 /* KioskButton.swift */,
+				2CB43C6E2C93DAD200075123 /* Assets.xcassets */,
+				2CB43C702C93DAD200075123 /* Preview Content */,
+			);
+			path = KioskLab6;
+			sourceTree = "<group>";
+		};
+		2CB43C702C93DAD200075123 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CB43C712C93DAD200075123 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CB43C7A2C93DAD200075123 /* KioskLab6Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB43C7B2C93DAD200075123 /* KioskLab6Tests.swift */,
+			);
+			path = KioskLab6Tests;
+			sourceTree = "<group>";
+		};
+		2CB43C842C93DAD200075123 /* KioskLab6UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB43C852C93DAD200075123 /* KioskLab6UITests.swift */,
+				2CB43C872C93DAD200075123 /* KioskLab6UITestsLaunchTests.swift */,
+			);
+			path = KioskLab6UITests;
+			sourceTree = "<group>";
+		};
+		EA2E07B42C93F28D00F38B9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E07B72C93F2B200F38B9E /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBA85C692C9400A000D5D69C /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85C6A2C9400AA00D5D69C /* CartStore.swift */,
+				FBA85C6D2C9400D300D5D69C /* CartView.swift */,
+				FBA85C6F2C9400E900D5D69C /* CartItemCell.swift */,
+				FBA85C712C9401D300D5D69C /* CategoryModifier.swift */,
+				FBA85C732C940C7500D5D69C /* LabelButton.swift */,
+				FBA85C752C940FF300D5D69C /* PaymentView.swift */,
+				FBA85C772C9411DF00D5D69C /* PayButtonModifier.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CB43C662C93DAD100075123 /* KioskLab6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB43C8B2C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6" */;
+			buildPhases = (
+				2CB43C632C93DAD100075123 /* Sources */,
+				2CB43C642C93DAD100075123 /* Frameworks */,
+				2CB43C652C93DAD100075123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KioskLab6;
+			productName = KioskLab6;
+			productReference = 2CB43C672C93DAD100075123 /* KioskLab6.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CB43C762C93DAD200075123 /* KioskLab6Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB43C8E2C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6Tests" */;
+			buildPhases = (
+				2CB43C732C93DAD200075123 /* Sources */,
+				2CB43C742C93DAD200075123 /* Frameworks */,
+				2CB43C752C93DAD200075123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB43C792C93DAD200075123 /* PBXTargetDependency */,
+			);
+			name = KioskLab6Tests;
+			productName = KioskLab6Tests;
+			productReference = 2CB43C772C93DAD200075123 /* KioskLab6Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CB43C802C93DAD200075123 /* KioskLab6UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB43C912C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6UITests" */;
+			buildPhases = (
+				2CB43C7D2C93DAD200075123 /* Sources */,
+				2CB43C7E2C93DAD200075123 /* Frameworks */,
+				2CB43C7F2C93DAD200075123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB43C832C93DAD200075123 /* PBXTargetDependency */,
+			);
+			name = KioskLab6UITests;
+			productName = KioskLab6UITests;
+			productReference = 2CB43C812C93DAD200075123 /* KioskLab6UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CB43C5F2C93DAD100075123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2CB43C662C93DAD100075123 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2CB43C762C93DAD200075123 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2CB43C662C93DAD100075123;
+					};
+					2CB43C802C93DAD200075123 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2CB43C662C93DAD100075123;
+					};
+				};
+			};
+			buildConfigurationList = 2CB43C622C93DAD100075123 /* Build configuration list for PBXProject "KioskLab6" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CB43C5E2C93DAD100075123;
+			productRefGroup = 2CB43C682C93DAD100075123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CB43C662C93DAD100075123 /* KioskLab6 */,
+				2CB43C762C93DAD200075123 /* KioskLab6Tests */,
+				2CB43C802C93DAD200075123 /* KioskLab6UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CB43C652C93DAD100075123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB43C722C93DAD200075123 /* Preview Assets.xcassets in Resources */,
+				2CB43C6F2C93DAD200075123 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C752C93DAD200075123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C7F2C93DAD200075123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CB43C632C93DAD100075123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB43C952C93DB6800075123 /* KioskHomeView.swift in Sources */,
+				2C5402242C94016600F8B364 /* KioskMenuView.swift in Sources */,
+				FBA85C6E2C9400D300D5D69C /* CartView.swift in Sources */,
+				2CB43C972C93F4D400075123 /* KioskButton.swift in Sources */,
+				2C54022E2C9418B300F8B364 /* KioskCategoryButton.swift in Sources */,
+				2CB43C6B2C93DAD100075123 /* KioskLab6App.swift in Sources */,
+				FBA85C722C9401D300D5D69C /* CategoryModifier.swift in Sources */,
+				FBA85C742C940C7500D5D69C /* LabelButton.swift in Sources */,
+				FBA85C762C940FF300D5D69C /* PaymentView.swift in Sources */,
+				EA2E07B82C93F2B200F38B9E /* Food.swift in Sources */,
+				2C54022D2C9418B300F8B364 /* DisplayFilterButton.swift in Sources */,
+				FBA85C702C9400E900D5D69C /* CartItemCell.swift in Sources */,
+				FBA85C6B2C9400AA00D5D69C /* CartStore.swift in Sources */,
+				FBA85C782C9411DF00D5D69C /* PayButtonModifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C732C93DAD200075123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB43C7C2C93DAD200075123 /* KioskLab6Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB43C7D2C93DAD200075123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB43C862C93DAD200075123 /* KioskLab6UITests.swift in Sources */,
+				2CB43C882C93DAD200075123 /* KioskLab6UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CB43C792C93DAD200075123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB43C662C93DAD100075123 /* KioskLab6 */;
+			targetProxy = 2CB43C782C93DAD200075123 /* PBXContainerItemProxy */;
+		};
+		2CB43C832C93DAD200075123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB43C662C93DAD100075123 /* KioskLab6 */;
+			targetProxy = 2CB43C822C93DAD200075123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CB43C892C93DAD200075123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CB43C8A2C93DAD200075123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CB43C8C2C93DAD200075123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KioskLab6/Preview Content\"";
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CB43C8D2C93DAD200075123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KioskLab6/Preview Content\"";
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CB43C8F2C93DAD200075123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KioskLab6.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KioskLab6";
+			};
+			name = Debug;
+		};
+		2CB43C902C93DAD200075123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KioskLab6.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KioskLab6";
+			};
+			name = Release;
+		};
+		2CB43C922C93DAD200075123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KioskLab6;
+			};
+			name = Debug;
+		};
+		2CB43C932C93DAD200075123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4BQZ3AXAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueunal.com.KioskLab6UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KioskLab6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CB43C622C93DAD100075123 /* Build configuration list for PBXProject "KioskLab6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB43C892C93DAD200075123 /* Debug */,
+				2CB43C8A2C93DAD200075123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB43C8B2C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB43C8C2C93DAD200075123 /* Debug */,
+				2CB43C8D2C93DAD200075123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB43C8E2C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB43C8F2C93DAD200075123 /* Debug */,
+				2CB43C902C93DAD200075123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB43C912C93DAD200075123 /* Build configuration list for PBXNativeTarget "KioskLab6UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB43C922C93DAD200075123 /* Debug */,
+				2CB43C932C93DAD200075123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CB43C5F2C93DAD100075123 /* Project object */;
+}
