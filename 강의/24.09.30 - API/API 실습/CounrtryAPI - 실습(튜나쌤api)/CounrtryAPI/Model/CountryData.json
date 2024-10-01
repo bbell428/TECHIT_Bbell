@@ -1,0 +1,62 @@
+[
+    {
+        "id": 6,
+        "name": "Canada",
+        "population": 39742430,
+        "capital": "Ottawa",
+        "language": "English, French",
+        "latitude": 45.4215,
+        "longitude": -75.6972,
+        "image": "https://minyoungyoo.com/api/ottawa.jpg"
+    },
+    {
+        "id": 4,
+        "name": "China",
+        "population": 1419321278,
+        "capital": "Beijing",
+        "language": "Chinese",
+        "latitude": 39.9042,
+        "longitude": 116.4074,
+        "image": "https://minyoungyoo.com/api/beijing.jpg"
+    },
+    {
+        "id": 5,
+        "name": "France",
+        "population": 66573449,
+        "capital": "Paris",
+        "language": "French",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "image": "https://minyoungyoo.com/api/paris.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Japan",
+        "population": 123753041,
+        "capital": "Tokyo",
+        "language": "Japanese",
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "image": "https://minyoungyoo.com/api/tokyo.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Korea",
+        "population": 51330000,
+        "capital": "Seoul",
+        "language": "Korean",
+        "latitude": 37.5665,
+        "longitude": 126.978,
+        "image": "https://minyoungyoo.com/api/seoul.jpg"
+    },
+    {
+        "id": 2,
+        "name": "United States",
+        "population": 343477335,
+        "capital": "Washington D.C.",
+        "language": "English",
+        "latitude": 38.8951,
+        "longitude": -77.0364,
+        "image": "https://minyoungyoo.com/api/dc.jpg"
+    }
+]
